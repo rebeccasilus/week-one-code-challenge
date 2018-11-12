@@ -20,8 +20,11 @@ $('.canvas').append(`<div class="red">
 <button class="delete">Delete</button>
 </div>`);
 counterP++;
+    // $(".swap").on('click', function () {
+    //     $(this).parent().css('background-color', 'yellow');   
+    // });
     $(".swap").on('click', function () {
-        $(this).parent().css('background-color', 'yellow');
+        $(this).parent().addClass('yellow').removeClass('red');
     });
     $(".delete").on('click', function () {
         $(this).parent().remove();
