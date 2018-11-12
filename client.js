@@ -16,14 +16,14 @@ function createDiv(){
 
 $('.canvas').append(`<div class="red">
 <p class="counter">${clickCounter++}</p>
-<button id="swap">Swap</button>
-<button id="delete">Delete</button>
+<button class="swap">Swap</button>
+<button class="delete">Delete</button>
 </div>`);
 counterP++;
-    $("#swap").on('click', function () {
+    $(".swap").on('click', function () {
         $(this).parent().css('background-color', 'yellow');
     });
-    $("#delete").on('click', function () {
+    $(".delete").on('click', function () {
         $(this).parent().remove();
     });
     //clickCounter++;
