@@ -24,7 +24,7 @@ counterP++;
         $(this).parent().css('background-color', 'yellow');
     });
     $("#delete").on('click', function () {
-        $(this).parent().css('background-color', 'yellow');
+        $(this).parent().remove();
     });
     //clickCounter++;
 } // end createDiv
